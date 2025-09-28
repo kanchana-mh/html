@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yummy Bites</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+    }
+
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #ff3e3e;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #e63e3e;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1604908177225-c6b3d292ec5e');
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+      font-size: 2.5em;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .dishes {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .dish {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 300px;
+      margin: 15px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .dish img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .dish h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .dishes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Yummy Bites</h1>
+    <p>Delicious food delivered to your door</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hero">
+    Fresh • Tasty • Fast
+  </div>
+
+  <section class="section">
+    <h2>Our Popular Dishes</h2>
+    <div class="dishes">
+      <div class="dish">
+        <img src="https://images.unsplash.com/photo-1600891963935-c6122ffac1c8" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p>Juicy beef patty with melted cheese and fresh veggies.</p>
+      </div>
+      <div class="dish">
+        <img src="https://images.unsplash.com/photo-1576402187877-99dfe63e180b" alt="Pizza">
+        <h3>Margherita Pizza</h3>
+        <p>Classic pizza with tomato sauce, mozzarella & basil.</p>
+      </div>
+      <div class="dish">
+        <img src="https://images.unsplash.com/photo-1608759265464-9547a4aa8f82" alt="Pasta">
+        <h3>Spaghetti Carbonara</h3>
+        <p>Creamy pasta with bacon and parmesan cheese.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yummy Bites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
