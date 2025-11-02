@@ -1,1 +1,1 @@
-this is th 2nd commit made in remote repo
+this is the 2nd commit made in remote repo
